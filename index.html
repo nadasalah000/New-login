@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application-Home</title>
+    <!-- ^ icon -->
+    <link rel="icon" href="image/pexels-irina-iriser-1381679.jpg">
+    <!-- ^ lock -->
+    <script>
+        if (!localStorage.getItem("loggedUser")) {
+          location.href = "./sign-in.html";
+        }
+    </script>
+    <!-- ^ font -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Nanum+Gothic+Coding&family=Open+Sans&family=Pacifico&family=Rethink+Sans:ital@1&family=Roboto:wght@700&family=Rubik+Bubbles&family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Nanum+Gothic+Coding&family=Open+Sans&family=Pacifico&family=Rethink+Sans:ital@1&family=Roboto:wght@700&family=Rubik+Bubbles&family=Special+Elite&family=Stylish&display=swap" rel="stylesheet">
+    <!-- ^ fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- ^ bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ^ main -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ^ media -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+     <div class="logout" onclick="logOut()">
+        <i class="fa-solid fa-right-from-bracket"></i>
+     </div>
+    <div class="home mi d-flex justify-content-center align-items-center">
+      <div class="welcom color">
+         <h1>WELCOM :  <i class="fa-solid fa-face-kiss-wink-heart fa-bounce fa-2xl"></i></h1>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

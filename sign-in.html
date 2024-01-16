@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application-SignIn</title>
+    <!-- ! icon -->
+    <link rel="icon" href="image/pexels-irina-iriser-1381679.jpg">
+    <!-- ! font -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Nanum+Gothic+Coding&family=Open+Sans&family=Pacifico&family=Rethink+Sans:ital@1&family=Roboto:wght@700&family=Rubik+Bubbles&family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Nanum+Gothic+Coding&family=Open+Sans&family=Pacifico&family=Rethink+Sans:ital@1&family=Roboto:wght@700&family=Rubik+Bubbles&family=Special+Elite&family=Stylish&display=swap" rel="stylesheet">
+    <!-- ! fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- ! bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- ! main -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ! media -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="cont mi position-relative">
+        <div class="logo">
+            <img src="image/pexels-irina-iriser-1381679.jpg" alt="">
+        </div>
+        <div class="text-center mt-4 name color">Application <i class="fa-solid fa-heart fa-beat fa-2xs"></i></div>
+        <p class="comment color text-center w-75 m-auto">" To keep connected with us please login with your personal info. "</p>
+        <form class="p-3 mt-3">
+            <div class="field d-flex align-items-center mb-3">
+                <i class="fa-solid fa-user fa-bounce color ms-sm-4 me-2"></i>
+                <input type="email" name="email" class="color" id="emailInput" placeholder="email">
+            </div>
+            <div class="alert alert-success d-none" role="alert" id="LV1">  <i class="fa-solid fa-circle-check fa-beat"></i> This email exists</div>
+            <div class="alert alert-danger d-none" role="alert" id="LNV1">  <i class="fa-solid fa-circle-exclamation fa-beat-fade"></i> This email does not exist</div>
+            <div class="field d-flex align-items-center mb-3">
+                <i class="fa-solid fa-key fa-bounce color ms-sm-4 me-2"></i>
+                <input type="password" name="password" class="color" readonly  id="passwordInput" placeholder="Password">
+            </div>
+            <button class="btn mt-3 btn-sign-in" type="button" onclick="login()">Sign in</button>
+        </form>
+        <div class="text text-center fs-6">
+            <a href="sorry.html">Forget password?</a> or <a href="sign-up.html">Sign up</a>
+        </div>
+    </div>
+    <div class="login-failed position-absolute d-none justify-content-center align-items-center">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title color">Login Failed :</h5>
+              <div class="icon d-flex justify-content-center align-items-center py-4 color">
+                <i class="fa-solid fa-face-frown fa-bounce fa-2xl"></i>
+              </div>
+              <p class="card-text color">(error) Invalid Email or Password</p>
+              <a href="sign-in.html" class="btn btn-try w-75">Try Again</a>
+            </div>
+          </div>
+      </div>
+    <div class="notFound position-absolute d-none justify-content-center align-items-center">
+       <div class="card">
+        <div class="card-body">
+            <h5>unavailable</h5>
+            <p class="card-text color">This email does not already exist</p>
+            <a href="sign-in.html" class="btn btn-try w-75">Try Again</a>
+        </div>
+       </div>
+    </div>
+    <script src="js/sign-in.js"></script>
+</body>
+</html>

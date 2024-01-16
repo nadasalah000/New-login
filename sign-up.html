@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application-SignUp</title>
+    <!-- * icon -->
+    <link rel="icon" href="image/pexels-irina-iriser-1381679.jpg">
+    <!-- * font -->
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Nanum+Gothic+Coding&family=Open+Sans&family=Pacifico&family=Rethink+Sans:ital@1&family=Roboto:wght@700&family=Rubik+Bubbles&family=Stylish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Alegreya:wght@700&family=Amatic+SC:wght@700&family=Inter&family=Nanum+Gothic+Coding&family=Open+Sans&family=Pacifico&family=Rethink+Sans:ital@1&family=Roboto:wght@700&family=Rubik+Bubbles&family=Special+Elite&family=Stylish&display=swap" rel="stylesheet">
+    <!-- * fontawesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- * bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- * main -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- * media -->
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="cont">
+        <div class="logo">
+            <img src="image/pexels-irina-iriser-1381679.jpg" alt="">
+        </div>
+        <div class="text-center mt-4 name color">Application <i class="fa-solid fa-heart fa-beat fa-2xs"></i></div>
+        <p class="comment color text-center w-75 m-auto">" Enter your personal details and start journey with us. "</p>
+        <form class="p-3 mt-3">
+            <div class="field d-flex align-items-center mb-3 ">
+                <i class="fa-solid fa-user fa-bounce color ms-sm-4 me-2"></i>
+                <input type="text" name="Firstname" class="color" id="firstNameInput" placeholder="Firstname">
+            </div>
+            <div class="alert alert-success d-none" role="alert" id="V1">  <i class="fa-solid fa-circle-check fa-beat"></i> The name is valid</div>
+            <div class="alert alert-danger d-none " role="alert" id="NV1">  <i class="fa-solid fa-circle-exclamation fa-beat-fade"></i> It must contain the first capital letter and be no less than 3 letters</div>
+            <div class="field d-flex align-items-center mb-3">
+                <i class="fa-solid fa-user fa-bounce color ms-sm-4 me-2"></i>
+                <input type="text" name="Lastname" class="color" id="lastNameInput" placeholder="Lastname">
+            </div>
+            <div class="alert alert-success d-none" role="alert" id="V2">  <i class="fa-solid fa-circle-check fa-beat"></i> The name is valid</div>
+            <div class="alert alert-danger d-none " role="alert" id="NV2">  <i class="fa-solid fa-circle-exclamation fa-beat-fade"></i> It must contain the first capital letter and be no less than 3 letters</div>
+            <div class="field d-flex align-items-center mb-3 ">
+                <i class="fa-solid fa-at fa-bounce color ms-sm-4 me-2"></i>
+                <input type="text" name="email" class="color" id="emailInput" placeholder="email ">
+            </div>
+            <div class="alert alert-success d-none" role="alert" id="V3">  <i class="fa-solid fa-circle-check fa-beat"></i> The email is valid</div>
+            <div class="alert alert-danger d-none " role="alert" id="NV3">  <i class="fa-solid fa-circle-exclamation fa-beat-fade"></i> Email is invalid</div>
+            <div class="field d-flex align-items-center mb-3">
+                <i class="fa-solid fa-lock fa-bounce color ms-sm-4 me-2"></i>
+                <input type="password" name="password" class="color"  id="passwordInput" placeholder="password">
+            </div>
+            <div class="alert alert-success d-none" role="alert" id="V4">  <i class="fa-solid fa-circle-check fa-beat"></i> The password is valid</div>
+            <div class="alert alert-danger d-none " role="alert" id="NV4">  <i class="fa-solid fa-circle-exclamation fa-beat-fade"></i> It must be at least 8 characters long and not contain a space</div>
+            <button class="btn mt-3" type="button" id="registerBtn">Sign up</button>
+        </form>
+        <div class="text text-center fs-6">
+            <a href="sign-in.html"> Already Have Account ?</a>
+        </div>
+    </div>
+    <div class="login-success position-absolute d-none justify-content-center align-items-center ">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title color">Good :</h5>
+              <div class="icon d-flex justify-content-center align-items-center py-4 color">
+                <i class="fa-solid fa-face-laugh-beam fa-bounce fa-2xl"></i>
+              </div>
+              <p> (Congratulation) Your account has been successfully created.</p>
+              <a href="sign-in.html" type="button" class="btn btn-sign-in w-50">Login in</a>
+            </div>
+          </div>
+      </div>
+    <script src="js/sign-up.js" ></script>
+</body>
+</html>
